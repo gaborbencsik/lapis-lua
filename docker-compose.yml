@@ -1,0 +1,11 @@
+version: "2"
+services:
+  app:
+    build: .
+    # image: gabor:latest
+    command: server production
+    volumes:
+      - .:/app/src
+      - ./logs:/usr/local/openresty/nginx/logs
+    ports:
+      - "8080:8080"

@@ -1,0 +1,4 @@
+name: "lua-docker"
+dependencies:
+  luarocks:
+    - penlight
